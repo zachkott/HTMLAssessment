@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTMLAssessment</title>
+  </head>
+  <body>
+    <h1>TEXT</h1>
+       <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+        <blockquote>
+       <p><strong><em>Curabitur</em></strong> <em>sodales ligula in libero. Sed dignissim lacinia nunc.
+       Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
+       Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+       Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</em></p>
+       </blockquote>
+
+       <p><strong>Nulla</strong> metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+       Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis.
+       Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+
+
+<h1>TABLE</h1>
+
+<blockquote >
+  <p>Scores by quarter</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Team Name</th>
+      <th colspan="2">First Half</th>
+      <th colspan="2">Second Half</th>
+      <th colspan="2">Final</th>
+    </tr>
+  </thead>
+
+    <tbody>
+      <tr>
+        <td  colspan="2">Manchester United</td>
+        <td colspan="2">1</td>
+        <td colspan="2">3</td>
+        <td colspan="2">4</td>
+     </tr>
+       <tr>
+         <td  colspan="2">Chelsea</td>
+         <td colspan="2">2</td>
+         <td colspan="2">1</td>
+         <td colspan="2">3</td>
+      </tr>
+   </tbody>
+
+<tfoot>
+  <td colspan="2">Total</td>
+  <td colspan="2">3</td>
+  <td colspan="2">4</td>
+  <td colspan="2">7</td>
+</tfoot>
+
+</table>
+
+
+<h1>LIST</h1>
+  <ul>
+    <li ><img height="60"src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Broncos"></li>
+    <a href="https://www.manutd.com/" target="_blank">Manchester United</a>
+      <ul>
+
+      <li>Team Manager: Erik Ten Hag </li>
+
+        <li>Goalie</li>
+         <ol>
+          <li>De Gea</li>
+        </ol>
+
+      <li>Defenders</li>
+       <ol>
+         <li>Williams</li>
+         <li>Maguire</li>
+         <li>Lindelof</li>
+         <li>Wan-Bissaka</li>
+      </ol>
+
+    <li>Midfield</li>
+      <ol>
+        <li>Matic</li>
+        <li>Pogba</li>
+     </ol>
+
+    <li>Forwards</li>
+      <ol>
+        <li>Rashford</li>
+        <li>Fernandes</li>
+        <li>Greenwood</li>
+        <li>Martial</li>
+     </ol>
+
+  </ul>
+
+  <li><img height="60"src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea F.C"></li>
+  <a href="https://www.chelseafc.com/en" target="_blank">Chelsea Football Club</a>
+    <ul>
+      <li>Team Manager: Thomas Tuchel </li>
+
+      <li>Goalie</li>
+       <ol>
+         <li>Mendy</li>
+       </ol>
+
+    <li>Defenders</li>
+      <ol>
+        <li>Kounde</li>
+        <li>Thiago Silva</li>
+        <li>Koulibaly</li>
+    </ol>
+
+    <li>Midfield</li>
+      <ol>
+        <li>Chilwell</li>
+        <li>Kante</li>
+        <li>Tchouameni</li>
+        <li>james</li>
+     </ol>
+
+    <li>Forwards</li>
+      <ol>
+        <li>Mount</li>
+        <li>Lukaku</li>
+        <li>Havertz</li>
+     </ol>
+  </ul>
+</ul>
+
+
+<h1>FORM</h1>
+<form action="index.html" method="post">
+<label>First: <input type="text" name="firstName"></label>
+<label>Last: <input type="text" name="lastName"></label>
+<br>
+<label>Favorite Sport:</label>
+<br>
+<select name="favoriteSport">
+  <option value="soccer">Soccer</option>
+  <option value="football">Football</option>
+  <option value="tennis">Tennis</option>
+  <option value="baseball">Baseball</option>
+  <option value="lacrosse">Lacrosse</option>
+  <option value="swimming">Swimming</option>
+</select>
+<br>
+<label>I have: <input type="checkbox" name="attended">Attended
+  <input type="checkbox" name="played">Played
+  <input type="checkbox" name="coached">Coached
+  <input type="checkbox" name="bet">Bet on
+  <br>
+this sport.
+</label>
+<label>For this sport I prefer the: <input type="radio" name="amateur">Amateur
+<input type="radio" name="college">College
+<input type="radio" name="pro">Professional
+</label>
+<br>
+<input type="submit" name="submit" value="Submit Query">
+
+</form>
+  </body>
+</html>
