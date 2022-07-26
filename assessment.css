@@ -2,59 +2,91 @@
   color:green;
   font-family: sans-serif;
 }
-#scoreBoard{
-  border: 3px groove black;
-  text-align:center;
-  font-weight:bold;
-  color: maroon;
+
+thead{
+  color:maroon;
+  font-weight: bold;
   font-size: 25px;
 }
+
+#scoreBoard{
+  border: 3px groove black;
+  font-size: 25px;
+  text-align:center;
+}
+
 #teamRoster{
   list-style-type: square;
 }
-a:hover{
-  color:red;
+
+.hyperLink:hover{
+  background-color:red;
   text-decoration: none;
 }
+
 blockquote{
   background-color: teal;
   color: white;
 }
 
-/* Havent been able to figure out how to adjust the background opacity without changing the text opacity */
+
 #teamRoster > :first-child{
-  background: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
-  opacity: 0.6;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
 
 }
+#teamRoster > :first-child::after{
+  content: "";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 #teamRoster > :last-child{
-  background: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
-  opacity: 0.6;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
 
 }
-/* #teamRoster  > :nth-child(2){
-  opacity: 1;
-} */
+#teamRoster > :last-child::after{
+  content: "";
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
-li >img{
+
+#teamRoster img{
   display: none;
 }
 
 #checkbox-grid{
   list-style-type: none;
 }
+
 #teamRoster ul ol :nth-child(1){
   font-weight: bold;
 }
-tr :nth-child(even){
+
+tbody :nth-child(even){
   background-color: gray;
 }
-tr :nth-child(odd){
+
+tbody :nth-child(odd){
   background-color: orange;
 }
