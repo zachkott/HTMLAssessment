@@ -1,5 +1,5 @@
 .subjectHeader{
-  color:green;
+  color:maroon;
   font-family: sans-serif;
 }
 
@@ -20,13 +20,13 @@ thead{
 }
 
 .hyperLink:hover{
-  background-color:red;
+  background-color:gray;
   text-decoration: none;
 }
 
 blockquote{
-  background-color: teal;
-  color: white;
+  background-color: brown;
+  color: yellow;
 }
 
 
